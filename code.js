@@ -14,9 +14,7 @@ function run() {
     // 今回送信する文字リストを生成する
     let FinalSendList = sendList.filter(value =>
         !saveData.includes(value)
-    ).concat(saveData.filter(value =>
-        !sendList.includes(value)
-    ));
+    );
 
     // もし 今回送信する文字リスト"FinalSendList" に何も入っていなかったら
     if (FinalSendList.length == 0) {
